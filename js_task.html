@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>JS Task (25-01-2022)</title>
+    </head>
+
+    <body>
+        <h1 id="task-description">Perform task on <code>getElement*</code>, <code>querySelector*</code></h1>
+        <div class="u-List"> 
+            <ul name="myList">
+                <div class="listItems">
+                    <li id="item1">Item 1</li>
+                </div>
+                <div class="listItems">
+                    <li id="item2">Item 2</li>
+                </div>
+                <div class="listItems">
+                    <li id="item3">Item 3</li>
+                </div>
+                <div class="listItems">
+                    <li id="item4">Item 4</li>
+                </div>
+                <div class="listItems">
+                    <li id="item5">Item 5</li>
+                </div>
+            </ul>
+        </div>
+    </body>
+
+    <script>
+
+        // find by ID
+        var selectItem = document.getElementById("item1");
+        console.log("Element by id", selectItem);
+
+        // find by class name
+        selectItem = document.getElementsByClassName("listItems")
+        console.log("Element by class name",selectItem);
+
+        // find by name
+        selectItem = document.getElementsByName("myList");
+        console.log("Element by name",selectItem);
+
+        // find by tag name
+        selectItem = document.getElementsByTagName("div");
+        console.log("Element by tag-name",selectItem);
+
+        // find by query selector
+        selectItem = document.querySelector(".u-List");
+        console.log("By query-selector",selectItem);
+
+        // find by query selector all
+        selectItem = document.querySelectorAll(".listItems");
+        console.log("By query-selector-all",selectItem);
+
+        // *** letter "s" returns a collection of elements ***
+    </script>
+
+</html>
